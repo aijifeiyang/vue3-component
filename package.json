@@ -1,20 +1,20 @@
 {
   "name": "vue3-component-monorepo",
   "version": "1.0.0",
+  "packageManager": "pnpm@7.27.1",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
     "site": "pnpm -F site dev",
     "site:build": "pnpm --filter site build "
   },
-  "lint-staged": {
-    "*.{ts,tsx,less,vue}": "eslint . --fix"
+  "dependencies": {
+    "vue": "^3.2.47"
   },
-  "packageManager": "pnpm@7.27.1",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-angular": "^17.4.4",
@@ -26,7 +26,7 @@
     "vite": "^4.1.4",
     "vitest": "^0.29.1"
   },
-  "dependencies": {
-    "vue": "^3.2.47"
+  "lint-staged": {
+    "*.{ts,tsx,less,vue}": "eslint . --fix"
   }
 }

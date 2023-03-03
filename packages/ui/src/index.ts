@@ -9,6 +9,7 @@ export default {
     for (const key in components) {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-expect-error
+      // eslint-disable-next-line import/namespace
       const comp = components[key]
       if (comp.install)
         app.use(comp)

@@ -2,26 +2,26 @@
   "name": "site",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "peerDependencies": {
+    "@vuepress/client": "2.0.0-beta.61",
+    "vite": "^2.9.9",
+    "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "vue": "^3.2.47",
+    "vuepress": "2.0.0-beta.61"
+  },
   "devDependencies": {
     "@vitejs/plugin-vue-jsx": "^3.0.0",
     "@vuepress/client": "2.0.0-beta.61",
     "@yanyu-fe/vuepress-plugin-code-block": "^0.2.2"
-  },
-  "peerDependencies": {
-    "@vuepress/client": "2.0.0-beta.61",
-    "vue": "^3.2.47",
-    "vite": "^2.9.9"
-  },
-  "dependencies": {
-    "vuepress": "2.0.0-beta.61",
-    "vue": "^3.2.47"
   }
 }
