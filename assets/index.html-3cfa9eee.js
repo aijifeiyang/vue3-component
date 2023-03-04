@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"前端组件库","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1677929302000,"contributors":[{"name":"yanglu","email":"aijifeiyang@gmail.com","commits":1}]},"filePathRelative":"README.md"}');export{a as data};
