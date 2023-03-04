@@ -7,6 +7,7 @@ import  vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineUserConfig({
   title: '前端组件库',
+  base: process.env.NODE_ENV === 'production' ? '/vue3-component/' : '/',
   plugins: [
     codeBlockPlugin()
   ],
