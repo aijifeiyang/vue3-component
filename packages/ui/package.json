@@ -1,5 +1,5 @@
 {
-  "name": "ui-design",
+  "name": "@frank/ui-design",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -12,6 +12,14 @@
     "lib",
     "es",
     "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects":[
+    "es/**/style/**.less",
+    "lib/**/style/**.less",
+    "dist/**.css"
   ],
   "scripts": {
     "build:comp": "vite build",
