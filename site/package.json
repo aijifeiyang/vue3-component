@@ -10,6 +10,7 @@
     "dev": "vuepress dev",
     "build": "vuepress build"
   },
+  "packageManager": "pnpm@7.27.1",
   "peerDependencies": {
     "@vuepress/client": "2.0.0-beta.61",
     "vue": "^3.2.47"
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue-jsx": "^3.0.0",
     "@vuepress/client": "2.0.0-beta.61",
-    "@yanyu-fe/vuepress-plugin-code-block": "^0.2.2"
+    "@yanyu-fe/vuepress-plugin-code-block": "^0.2.2",
+    "less": "^4.1.3"
   }
 }

@@ -1,4 +1,4 @@
-import { type PropType, defineComponent } from 'vue'
+import { type PropType, computed, defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'YButton',
@@ -9,9 +9,14 @@ export default defineComponent({
     },
   },
   setup(_props, { slots }) {
+    const prefixCls = 'ui-btn'
+    const cls = computed(() => ({
+      [prefixCls]: true,
+      [`${prefixCls}-${_props.type}`]: _props.type !== 'default',
+    }))
     return () => {
       return (
-        <button>{ slots.default && slots.default() }</button>
+        <button class={cls.value}>{ slots.default && slots.default() }</button>
       )
     }
   },
